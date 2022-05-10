@@ -21,7 +21,7 @@ del_dupLetter(s) #abcd
 
 ### stack, que
 def removeDuplicateLetters(self, s: str) -> str:
-	# counter 숫자 세기 / seen 처리한 문자 확인하기 / stack 스택 쌓기 용도
+	# counter 숫자 세기; seen 처리한 문자 확인; stack 스택 쌓기 용도
 	counter, seen, stack = collections.Counter(s), set(), []
 
 	for char in s:
