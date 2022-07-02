@@ -4,11 +4,16 @@
 *해시 테이블을 이용하지 않았음..
 
 ### code
-def numJewelsInStones(self, jewels: str, stones: str) -> int:
-    jw = list(jewels)
-    st = list(stones)
+def numJewelsInStones(jewels, stones):
     answer = 0
-    for i in jw:
-        answer += st.count(i)
+    for i in jewels:
+        answer += stones.count(i)
 
     return answer
+
+
+### test
+J = "aA"
+S = "aAAbbbb"
+
+numJewelsInStones(J, S) # 3
